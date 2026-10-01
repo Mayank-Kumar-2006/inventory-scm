@@ -1,0 +1,2 @@
+{ "name": "inventory-server", "type": "module", "scripts": { "start": "node index.js" },
+  "dependencies": { "cors": "^2.8.5", "express": "^4.19.2", "ioredis": "^5.4.1", "pg": "^8.12.0" } }

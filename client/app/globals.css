@@ -1,0 +1,22 @@
+:root{--bg:#e9edf2;--ink:#14202b;--mute:#566574;--line:#c9d2dc;--panel:#fff;--accent:#14202b;--hi:#f2b705;--ok:#2e7d4f;--warn:#c77700;--bad:#b3261e}
+@media(prefers-color-scheme:dark){:root{--bg:#10171e;--ink:#e8edf2;--mute:#92a1af;--line:#26323d;--panel:#18222b;--accent:#f2b705;--hi:#f2b705;--ok:#58c183;--warn:#f0a030;--bad:#ff7b72}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 Archivo,system-ui,sans-serif}
+header{padding:20px 28px;border-bottom:4px solid var(--hi);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+h1{margin:0;font-weight:800;font-size:26px;letter-spacing:-.5px}h3{margin:0 0 8px}
+main{padding:24px 28px;display:flex;flex-direction:column;gap:20px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.card,.panel{background:var(--panel);border:1px solid var(--line);padding:14px 16px}
+.card b{display:block;font-size:30px;font-weight:800}.muted{color:var(--mute);font-size:13px}
+.tabs{display:flex;gap:4px;flex-wrap:wrap}
+button,input,select{font:inherit;padding:7px 11px;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:2px}
+button{cursor:pointer;background:var(--accent);color:var(--bg);border-color:var(--accent);font-weight:600}
+button.ghost{background:none;color:var(--ink);border-color:var(--line)}button.on{background:var(--hi);color:#14202b;border-color:var(--hi)}
+:focus-visible{outline:2px solid var(--hi);outline-offset:2px}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
+th{font-weight:600;color:var(--mute);font-size:13px}
+.pill{padding:2px 8px;border-radius:2px;font-size:12px;font-weight:600;color:#fff}
+.ok{background:var(--ok)}.low,.at-risk{background:var(--warn)}.out{background:var(--bad)}
+.bar{height:6px;background:var(--line);min-width:90px}.bar i{display:block;height:100%;background:var(--ok)}
+.bar.low i,.bar.at-risk i{background:var(--warn)}.bar.out i{background:var(--bad)}
+.err{color:var(--bad)}a{color:inherit;font-weight:600}
